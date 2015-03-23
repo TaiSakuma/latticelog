@@ -6,7 +6,7 @@ vcontext("panel.xyarea_s")
 
 ##____________________________________________________________________________||
 x <- 0:5
-y <- c(4, 1, 2, 0, 1, 0)
+y <- c(4, 1, 2, 0, 1, 5)
 p <- xyplot(y ~ x, panel = panel.xyarea_s)
 set_last_plot(p)
 save_vtest("panel.xyarea_s 1")
