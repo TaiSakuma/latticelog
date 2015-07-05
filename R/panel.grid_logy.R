@@ -17,7 +17,7 @@ panel.grid_logy <- function(col = reference.line$col, lty = reference.line$lty,
     y.at <- c(floor(lim$ylim[1]), ceiling(lim$ylim[2]))
     y.grid.at <- log10.y.grid.at(y.at)
     sapply(y.grid.at, function(x) panel.lines(c(lim$xlim[1], lim$xlim[2]), c(x, x), col = col, lwd = lwd.minor))
-    sapply(y.at, function(x) panel.lines(c(lim$xlim[1], lim$xlim[2]), c(x, x), col = col, lwd = 1))
+    sapply(y.at, function(x) panel.lines(c(lim$xlim[1], lim$xlim[2]), c(x, x), col = col, lwd = lwd))
   }
 
 ##____________________________________________________________________________||
