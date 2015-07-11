@@ -7,7 +7,8 @@ panel.xyarea_s <- function(x, y, subscripts = NULL, groups = NULL, ...)
     xx <- rep(x, each = 2)
     yy <- rep(y, each = 2)
     yy <- yy[c(length(yy), 1:(length(yy)-1))]
-    i <- ifelse(is.null(gg), 1, tapply(1:length(gg), gg, min))
+    i <- if(is.null(gg)) 1 else tapply(1:length(gg), gg, min)
+    i <- i[!is.na(i)]
     gg <- gg[-i]
     xx <- xx[-i]
     yy <- yy[-i]
