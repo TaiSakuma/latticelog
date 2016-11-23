@@ -4,9 +4,11 @@ Version: 0.0.0.9000
 Authors@R: person("Tai", "Sakuma", , "tai.sakuma@cern.ch", role = c("aut", "cre"))
 Description: An extension of Lattice. This package contains a set of
     functions which can be used with Lattice
-Depends: R (>= 3.1.2)
+Depends:
+    R (>= 3.1.2)
 License: GPL-3
 LazyData: true
 Imports:
     lattice,
     latticeExtra,
+RoxygenNote: 5.0.1
